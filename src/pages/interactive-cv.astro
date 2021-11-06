@@ -1,7 +1,7 @@
 ---
 import NavBar from "../components/common/NavBar.astro"
 import SideBar from "../components/common/SideBar.astro"
-import HomeContent from "../components/home/HomeContent.astro"
+import InteractiveCV from "../components/interactive_cv/InteractiveCV.astro"
 
 ---
 <html lang="en">
@@ -10,14 +10,14 @@ import HomeContent from "../components/home/HomeContent.astro"
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Welcome to Astro</title>
+	<title>Boyd Thurston|Interactive CV</title>
 </head>
 
 <body>
-	<NavBar active={0}/>
+	<NavBar active={3}/>
 	<div class="flexContainer">
 		<SideBar />
-		<HomeContent />
+		<InteractiveCV />
 	</div>
 </body>
 

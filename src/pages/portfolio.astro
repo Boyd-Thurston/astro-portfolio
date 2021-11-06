@@ -1,8 +1,7 @@
 ---
 import NavBar from "../components/common/NavBar.astro"
 import SideBar from "../components/common/SideBar.astro"
-import HomeContent from "../components/home/HomeContent.astro"
-
+import PortfolioContent from "../components/portfolio/PortfolioContent.astro"
 ---
 <html lang="en">
 
@@ -14,10 +13,10 @@ import HomeContent from "../components/home/HomeContent.astro"
 </head>
 
 <body>
-	<NavBar active={0}/>
+	<NavBar active={1}/>
 	<div class="flexContainer">
 		<SideBar />
-		<HomeContent />
+		<PortfolioContent />
 	</div>
 </body>
 

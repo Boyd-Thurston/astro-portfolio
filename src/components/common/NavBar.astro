@@ -1,0 +1,50 @@
+---
+
+
+const { active } = Astro.props
+---
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: static;
+  width: 100%;
+  height: 50px;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: blueviolet;
+}
+
+</style>
+
+<header>
+  <nav>
+    <ul>
+      <li><a class={active === 0? "active" : ""} href="/">home</a></li>
+      <li><a class={active === 1? "active" : ""} href="/portfolio">portfolio</a></li>
+      <li><a class={active === 2? "active" : ""} href="/cv">CV</a></li>
+      <li><a class={active === 3? "active" : ""} href="/interactive-cv">ineractive CV</a></li>
+    </ul>
+  </nav>
+</header>
